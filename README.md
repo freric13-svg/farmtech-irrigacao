@@ -26,3 +26,13 @@ O sistema ativa a irrigação automaticamente quando:
 1. Carregue o código do `src` no simulador Wokwi.
 2. Execute o script Python para enviar os dados climáticos reais via Serial.
 3. Utilize o script R para analisar as médias de umidade da plantação.
+
+## 📸 Circuito do Projeto (Wokwi)
+Abaixo está a representação visual da montagem do hardware simulado:
+
+![Circuito FarmTech](./docs/circuito_farmtech.png)
+
+## 🛠️ Instruções de Execução
+1. Carregue o código da pasta `/src` no Wokwi.
+2. Certifique-se de que os pinos seguem o arquivo `diagram.json`.
+3. Para integração com a API, utilize o script em `/python`.
