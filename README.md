@@ -1,42 +1,28 @@
-# 🌱 FarmTech Solutions - Sistema de Irrigação Inteligente 
+# 🌱 FarmTech Solutions - Fase 2: Irrigação Inteligente
 
-## 📌 Descrição
-Projeto completo de agricultura digital utilizando ESP32, Python e dashboard web.
+## 📌 Sobre o Projeto
+Esta é a continuação do sistema de gestão agrícola voltado para o cultivo de **Shitake** e **Horticultura**. Nesta fase, implementamos um protótipo de **Irrigação Inteligente** utilizando o microcontrolador ESP32.
 
-## ⚙️ Componentes
-- ESP32 (Wokwi)
-- DHT22 (umidade)
-- LDR (pH)
-- Botões (NPK)
-- Relé (irrigação)
+## 🎯 Regras de Negócio
+O sistema ativa a irrigação automaticamente quando:
+1.  **Umidade do solo** for inferior a 60%.
+2.  **pH do solo** estiver fora da faixa ideal (5.5 a 7.0), simulado pelo LDR.
+3.  **Nutrientes NPK** estiverem insuficientes (simulados por botões).
+4.  **Previsão do Tempo:** A irrigação é bloqueada se a API do OpenWeather detectar chuva.
 
-## 🧠 Lógica
-Irrigação ativada quando:
-- Umidade < 50%
-- pH fora de 5.5 a 7.0
-- NPK incompleto
-- Sem previsão de chuva
+## 🛠️ Componentes e Conexões (Wokwi)
+- **DHT22:** Medidor de umidade e temperatura.
+- **LDR:** Simulador de sensor de pH.
+- **Botões (3x):** Representam os níveis de Nitrogênio (N), Fósforo (P) e Potássio (K).
+- **Relé:** Atuador que ligaria a bomba de água.
 
-## 🖥️ Dashboard
-Aplicação Flask que simula dados em tempo real (sem uso de banco de dados).
+## 📁 Organização do Repositório
+- `/src`: Código fonte `.ino` para o ESP32.
+- `/python`: Script de integração com API climática.
+- `/r`: Análise estatística dos dados de solo.
+- `/docs`: Diagramas e imagens do circuito.
 
-## 🤖 Automação
-Script que gera dados simulados no terminal.
-
-## 🚀 Execução
-
-### Dashboard
-```bash
-cd dashboard
-python app.py
-```
-
-### Automação
-```bash
-python automation.py
-```
-
-## 📹 Vídeo
-Adicionar link aqui
-
-## 👨‍💻 Projeto acadêmico FIAP
+## 🚀 Como Executar
+1. Carregue o código do `src` no simulador Wokwi.
+2. Execute o script Python para enviar os dados climáticos reais via Serial.
+3. Utilize o script R para analisar as médias de umidade da plantação.
