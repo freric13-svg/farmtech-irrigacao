@@ -1,4 +1,4 @@
-# 🌱 FarmTech Solutions - Sistema de Irrigação Inteligente (Versão Sem Banco)
+# 🌱 FarmTech Solutions - Sistema de Irrigação Inteligente 
 
 ## 📌 Descrição
 Projeto completo de agricultura digital utilizando ESP32, Python e dashboard web.
