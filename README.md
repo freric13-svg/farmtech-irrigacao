@@ -20,6 +20,9 @@ Sabrina Otoni
 **Coordenador(a):**
 André Godoi
 
+**👨‍🎓 Integrantes:**
+Fred Eric Nascimento Santos
+
 ---
 
 ## 🎯 Objetivo
@@ -62,7 +65,7 @@ A irrigação será **ativada automaticamente** quando todas as condições abai
 
 ## 📂 Estrutura do Projeto
 
-```bash
+```bash id="t5y7pl"
 farmtech-irrigacao/
 │
 ├── src/        # Código principal do ESP32 (.ino)
@@ -103,7 +106,7 @@ farmtech-irrigacao/
 
 ## 🔄 Fluxo do Sistema
 
-```text
+```text id="h28hlj"
 Sensores → ESP32 → Regras de Negócio → Decisão → Relé (Irrigação)
                       ↑
                 API Climática
@@ -140,9 +143,3 @@ Este projeto demonstra a aplicação prática de:
 Com potencial de expansão para cenários reais e escaláveis.
 
 ---
-
-
-## 🛠️ Instruções de Execução
-1. Carregue o código da pasta `/src` no Wokwi.
-2. Certifique-se de que os pinos seguem o arquivo `diagram.json`.
-3. Para integração com a API, utilize o script em `/python`.
