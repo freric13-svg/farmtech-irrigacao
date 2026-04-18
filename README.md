@@ -142,11 +142,6 @@ Com potencial de expansão para cenários reais e escaláveis.
 ---
 
 
-## 📸 Circuito do Projeto (Wokwi)
-Abaixo está a representação visual da montagem do hardware simulado:
-
-![Circuito FarmTech](./docs/circuito_farmtech.png)
-
 ## 🛠️ Instruções de Execução
 1. Carregue o código da pasta `/src` no Wokwi.
 2. Certifique-se de que os pinos seguem o arquivo `diagram.json`.
